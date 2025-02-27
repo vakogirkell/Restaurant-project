@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="in">
+                <div class="nav">
+                    <div class="left">
+                        <h1 class="logo1">Step</h1>
+                        <h1 class="logo2">Ordering</h1>
+                    </div>
+                    <div class="right">
+                        <h1 class="navhome">Home</h1>
+                        <h1 class="navcart">Cart</h1>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="headertext">
+            <h1>Fast And Efficient, Online Ordering You Must Try.</h1>
+        </div>
+    </header>
+    <ul>
+        <button class="li" onclick="GetAll()">All</button>
+    </ul>
+    <hr class="zoli">
+    <section>
+        <div class="filter">
+            <div class="filup">
+                <h1 class="filh">Filter</h1>
+                <i class="fa fa-solid fa-filter"></i>
+            </div>
+            <div class="area sp">
+                <label class="lab" for="">Spiciness:</label>
+                <input type="range" min="-1" max="4" value="-1" name="" id="sicxare">
+            </div>
+            <div class="area">
+                <label class="lab" for="">No Nuts</label>
+                <input type="checkbox"  id="nuts">
+            </div>
+            <div class="area">
+                <label class="lab" for="">Vegeterian Only</label>
+                <input type="checkbox"  id="vegan">
+            </div>
+            <div class="buts">
+                <button class="but" onclick="reset()">RESET</button>
+                <button class="but" onclick="filter()">APPLY FILTER</button>
+            </div>
+        </div>
+        <div class="allproducts"></div>
+    </section>
+    <footer>
+        <p>© Step Ordering 2025, All rights reserved</p>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

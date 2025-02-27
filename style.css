@@ -1,0 +1,185 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid silver;
+    border-radius: 10px;
+    align-items: center;
+    width: 250px;
+}
+.surati{
+    border-radius: 10px 10px 0 0;
+    height: 185px;
+    width: 250px;
+    background-color: silver;
+}
+.title{
+    font-size: 20px;
+}
+.spiciness{
+    color: rgba(0, 0, 0, 0.582);
+}
+.label{
+    color: rgba(0, 0, 0, 0.582);
+}
+.check{
+    color: rgba(0, 0, 0, 0.582);
+    border-radius: 50%;
+}
+.end{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+.add{
+    height: 40px;
+    width: 100px;
+    background-color: white;
+    border: 2px solid black;
+    transition: 0.4s;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    margin: 20px 0;
+    list-style: none;
+    cursor: pointer;
+}
+.allproducts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 70%;
+}
+.li{
+    height: 80px;
+    background-color: white;
+    border: 2px solid white;
+    font-size: 23px;
+    transition: 0.4s;
+}
+.li:hover, .add:hover{
+    border: 2px solid red;
+    background-color: red;
+    color: white;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.zoli{
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: -20.5px;
+    height: 2px;
+    background-color: red;
+}
+.filter{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 20px;
+    width: 250px;
+    background-color: rgba(192, 192, 192, 0.229);
+    border: 1px solid black;
+    gap: 15px;
+    height: 350px;
+}
+.filup{
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    padding-right: 15px;
+}
+.fa-filter{
+    margin-top: 15px;
+}
+.filh{
+    font-size: 17px;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+.sp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+#sicxare{
+    width: 80%;
+}
+.area{
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+.buts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    margin-top: 30px;
+    gap: 30px;
+}
+.but, .lab{
+    font-size: 17px;
+}
+.but{
+    width: 200px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.7s;
+}
+.but:hover{
+    cursor: pointer;
+    transition: 0.7s;
+    background-color: yellow;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-image: url(https://restaurant.stepprojects.ge/images/inner_banner.jpg);
+    height: 375px;
+    background-attachment: fixed;
+}
+.headertext{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+nav{
+    height: 70px;
+}
+.in{
+    left: 8px;
+    right: 8px;
+    position: fixed;
+    width: 100%-8px;
+    background-color: rgba(0, 0, 0, 0.663);
+    border: 3px solid black;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px 0 150px;
+    color: white;
+}
+.right{
+    align-items: center;
+    display: flex;
+    gap: 100px;
+}
+.logo2{
+    padding-left: 20px;
+}
+footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    color: white;
+}
