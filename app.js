@@ -34,7 +34,9 @@ function noreload(e) {
     e.preventDefault()
 }
 
-
+function gotoCart() {
+    window.location.href = "./cart.html"
+}
 
 
 
