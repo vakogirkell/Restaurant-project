@@ -31,7 +31,7 @@
     </ul>
     <hr class="zoli">
     <section>
-        <div class="filter">
+        <form class="filter" onsubmit="noreload(event)">
             <div class="filup">
                 <h1 class="filh">Filter:</h1>
                 <i class="fa fa-solid fa-filter"></i>
@@ -49,10 +49,10 @@
                 <input type="checkbox"  id="vegan">
             </div>
             <div class="buts">
-                <button class="but" onclick="reset()">RESET</button>
+                <button class="but" type="reset" onclick="GetAll()">RESET</button>
                 <button class="but" onclick="filter()">APPLY FILTER</button>
             </div>
-        </div>
+        </form>
         <div class="allproducts"></div>
     </section>
     <footer>

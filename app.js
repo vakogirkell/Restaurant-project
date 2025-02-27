@@ -30,10 +30,11 @@ function getFoods(id) {
 }
 
 
-
-
-function reset(){
+function noreload(e) {
+    e.preventDefault()
 }
+
+
 
 
 

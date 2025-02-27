@@ -141,7 +141,7 @@ section{
 header{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 90px;
     background-image: url(https://restaurant.stepprojects.ge/images/inner_banner.jpg);
     height: 375px;
     background-attachment: fixed;
