@@ -174,7 +174,7 @@ nav{
     gap: 100px;
 }
 .logo2{
-    padding-left: 21px;
+    padding-left: 20px;
 }
 footer{
     margin-top: 50px;
@@ -182,4 +182,21 @@ footer{
     justify-content: center;
     background-color: red;
     color: white;
+}
+
+.navhome{
+    cursor: pointer;
+}
+.navhome:hover{
+    color: yellow;
+    text-decoration: underline yellow;
+    transition: 1.8s;
+}
+.navcart{
+    cursor: pointer;
+}
+.navcart:hover{
+    color: yellow;
+    text-decoration: underline yellow;
+    transition: 1.8s;
 }
