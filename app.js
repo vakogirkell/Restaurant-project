@@ -55,7 +55,7 @@ function card(item) {
     else{
         veg = ''
     }
-    return `<div class="card">
+    return `<form onsubmit="addto(event), ${item.id}" class="card">
         <img class="surati" src="${item.image}" alt="">
         <h1 class="title">${item.name}</h1>
         <p class="spiciness">Spiciness: ${item.spiciness}</p>
@@ -67,9 +67,9 @@ function card(item) {
         </div>
         <div class="end">
             <h1 class="fasi">$ ${item.price}</h1>
-            <button class="add">Add to cart</button>
+            <button type="submit" class="add">Add to cart</button>
         </div>
-    </div>`
+    </form>`
 }
 
 function filter() {
@@ -94,4 +94,24 @@ function filter() {
         }
       
     });
+}
+
+function addto(event, id) {
+    
+    event.preventDefault()
+    
+    let formData = new FormData(event.target)
+    let finalForm = Object.fromEntries(formData)
+
+    finalForm.id = id
+
+    fetch("https://restaurant.stepprojects.ge/api/Baskets/AddToBasket", {
+        method: "POST",
+        headers: {
+            accept: "*/*",
+            'Content-Type': "application/json"
+        },
+        body: JSON.stringify(finalForm)
+    }).then( pasuxi =>  pasuxi.text(finalForm))
+    .then( data => console.log(data) )
 }
