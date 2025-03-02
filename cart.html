@@ -17,8 +17,9 @@
                         <h1 class="logo2">Ordering</h1>
                     </div>
                     <div class="right">
-                        <h1 class="navhome">Home</h1>
-                        <h1 class="navcart">Cart</h1>
+                        <h1 onclick="gotoHome()" class="navhome">Home</h1>
+                        <h1 onclick="gotoCart()" class="navcart">Cart</h1>
+                        <i onclick="gotoMenu()" id="bars" class="fa-solid fa-bars burger"></i>
                     </div>
                 </div>
             </div>
@@ -31,17 +32,17 @@
         <h1 class="cart">Cart</h1>
         <div class="main">
             <div class="title">
-                <h1>Product</h1>
+                <h1 class="tith">Product</h1>
                 <div class="titletwo">
-                    <h1>Qty</h1>
-                    <h1>Price</h1>
-                    <h1>Total</h1>
+                    <h1 class="tith">Qty</h1>
+                    <h1 class="tith">Price</h1>
+                    <h1 class="tith">Total</h1>
                 </div>
             </div>
             <div class="cardd"></div>
         </div>
         <div class="bottom">
-            <h1>Total: <span class="pricespan">$52.5</span></h1>
+            <h1 class="bottomh">Total: <span class="pricespan">$52.5</span></h1>
             <button class="proceed">PROCEED TO CHECKOUT</button>
         </div>
     </section>

@@ -37,7 +37,12 @@ function noreload(e) {
 function gotoCart() {
     window.location.href = "./cart.html"
 }
-
+function gotoHome() {
+    window.location.href = "./index.html"
+}
+function gotoMenu() {
+    window.location.href = "./menu.html"
+}
 
 
 function card(item) {

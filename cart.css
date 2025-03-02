@@ -5,11 +5,13 @@ header{
     background-image: url(https://restaurant.stepprojects.ge/images/inner_banner.jpg);
     height: 375px;
     background-attachment: fixed;
+    width: 100%;
 }
 .headertext{
     display: flex;
     justify-content: center;
     color: white;
+    text-align: center;
 }
 nav{
     height: 70px;
@@ -25,7 +27,8 @@ nav{
 .nav{
     display: flex;
     justify-content: space-between;
-    padding: 0 150px 0 150px;
+    padding: 0 10% 0 10%;
+    width: 80%;
     color: white;
 }
 .right{
@@ -42,6 +45,7 @@ footer{
     justify-content: center;
     background-color: red;
     color: white;
+    text-align: center;
 }
 
 .cart{
@@ -51,7 +55,7 @@ footer{
 .title{
     display: flex;
     justify-content: space-between;
-    padding: 0 75px;
+    padding: 0 5%;
     background: rgba(128, 128, 128, 0.323);
     border-bottom: solid 4px gray;
 }
@@ -122,4 +126,103 @@ footer{
 
 .pricespan{
     color: red;
+}
+.namim{
+    display: flex;
+    gap: 30px;
+}
+.navhome{
+    cursor: pointer;
+}
+.navhome:hover{
+    color: yellow;
+    text-decoration: underline yellow;
+    transition: 1.8s;
+}
+.navcart{
+    cursor: pointer;
+}
+.navcart:hover{
+    color: yellow;
+    text-decoration: underline yellow;
+    transition: 1.9s;
+}
+#bars{
+    display: none;
+}
+
+@media (max-width: 850px){
+    #bars{
+        display: inline;
+        font-size: 30px;
+    }
+    .navhome, .navcart{
+        display: none;
+    }
+    .namim{
+        flex-direction: column;
+        gap: 0;
+    }
+    .card{
+        padding: 0 5% 0 20px;
+    }
+}
+@media (max-width: 550px){
+    .in{
+        position: static;
+    }
+    .bottom{
+        align-items: start;
+    }
+}
+@media (max-width: 770px){
+    .titletwo{
+        gap: 50px;
+    }
+    .cardright{
+        gap: 50px;
+    }
+    .card{
+        padding: 0 2.5% 0 20px;
+    }
+}
+@media (max-width: 590px){
+    .cardh{
+        font-size: 20px;
+    }
+}
+@media (max-width: 490px){
+    .cardphoto{
+        width: 80px;
+        height: 80px;
+    }
+    .cardh{
+        font-size: 16px;
+    }
+}
+@media (max-width: 450px){
+    .tith{
+        font-size: 16px;
+    }
+    .cardphoto{
+        width: 60px;
+        height: 60px;
+    }
+}
+@media (max-width: 400px){
+    .cardleft{
+        gap: 10px;
+    }
+    .titletwo{
+        gap: 30px;
+    }
+    .cardright{
+        gap: 30px;
+    }
+    .bottomh{
+        font-size: 20px;
+    }
+    .bottom{
+        margin-top: 30px;
+    }
 }
