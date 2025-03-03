@@ -27,15 +27,6 @@ function gotoMenu() {
 
 
 function card(item){
-    let num = item.quantity
-    function mimateba(item){
-        num ++
-    }
-    function gamokleba(){
-        if(num > 0){
-            num--
-        }
-    }
     return  `<div class="card">
                 <div class="cardleft">
                     <div class="x">
@@ -50,7 +41,7 @@ function card(item){
                 <div class="cardright">
                     <div class="amount">
                         <button onclick="mimateba()" class="plus">+</button>
-                        <h1 class="tith">${num}</h1>
+                        <h1 class="tith">${item.quantity}</h1>
                         <button onclick="gamokleba()" class="minus">-</button>
                     </div>
                     <h1 class="pricecart tith">$${item.price}</h1>
