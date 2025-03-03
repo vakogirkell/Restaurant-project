@@ -9,7 +9,6 @@ function GetAll() {
     fetch('https://restaurant.stepprojects.ge/api/Products/GetAll')
     .then(pasuxi => pasuxi.json())
     .then(data => {
-        console.log(data);
         
         data.forEach(item => allProducts.innerHTML += card(item))})
     .catch(()=> allProducts.innerHTML = 'კავშირის პრობლემა')
@@ -34,7 +33,7 @@ function noreload(e) {
     e.preventDefault()
 }
 
-function gotoCart() {
+function gotoCart() {   
     window.location.href = "./cart.html"
 }
 function gotoHome() {
