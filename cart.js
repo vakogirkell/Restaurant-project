@@ -1,13 +1,17 @@
 let plus = document.querySelector(".plus")
 let minus = document.querySelector(".minus")
 let product = document.querySelector(".cardd")
-fetch("https://restaurant.stepprojects.ge/api/Baskets/GetAll")
-.then(pasuxi => pasuxi.json())
-.then(data => {
-    console.log(data);
-    
-    data.forEach(item => product.innerHTML += card(item))})
 
+function getAllCart() {
+    fetch("https://restaurant.stepprojects.ge/api/Baskets/GetAll")
+    .then(pasuxi => pasuxi.json())
+    .then(data => {
+        console.log(data);
+        
+        data.forEach(item => product.innerHTML += card(item))})
+}
+
+getAllCart()
 
 
 
@@ -30,7 +34,7 @@ function card(item){
     return  `<div class="card">
                 <div class="cardleft">
                     <div class="x">
-                        <i class="fa-solid fa-xmark"></i>
+                        <i onclick="washla(${item.product.id})" class="fa-solid fa-xmark"></i>
                         <i class="fa-solid fa-pencil"></i>
                     </div>
                     <div class="namim">
@@ -48,4 +52,23 @@ function card(item){
                     <h1 class="totalprice tith">$10</h1>
                 </div>
             </div>`
+}
+
+function washla(id){
+
+
+   
+    fetch(`https://restaurant.stepprojects.ge/api/Baskets/DeleteProduct/${id}`, {
+    
+        method: 'DELETE',
+        headers: {
+            accept: '*/*'
+        }
+    
+    })
+    .then(pasuxi =>  pasuxi.text())
+    .then(() => {
+        product.innerHTML = ""
+        getAllCart()
+    })
 }
