@@ -208,7 +208,9 @@ footer{
 #bars{
     display: none;
 }
-
+#nuts, #vegan{
+    cursor: pointer;
+}
 @media (max-width: 850px){
     #bars{
         display: inline;

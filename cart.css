@@ -150,7 +150,12 @@ footer{
 #bars{
     display: none;
 }
-
+.fa-xmark, .fa-pencil, .plus, .minus{
+    cursor: pointer;
+}
+.tith{
+    text-align: center;
+}
 @media (max-width: 850px){
     #bars{
         display: inline;
